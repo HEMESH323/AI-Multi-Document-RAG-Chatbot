@@ -1,0 +1,66 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.22.191.52:8501
+
+/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.23). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.10, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+/home/hemanth/micromamba/lib/python3.9/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/home/hemanth/micromamba/lib/python3.9/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py:47: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  from google.generativeai.caching import CachedContent  # type: ignore[import]
+2026-02-24 19:40:25.763 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 10, in <module>
+    from src.chatbot import ChatbotManager
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 51, in <module>
+    制作
+NameError: name '制作' is not defined
+2026-02-24 19:42:42.115 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 10, in <module>
+    from src.chatbot import ChatbotManager
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 51, in <module>
+    制作
+NameError: name '制作' is not defined
+2026-02-24 19:42:43.311 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 10, in <module>
+    from src.chatbot import ChatbotManager
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 51, in <module>
+    制作
+NameError: name '制作' is not defined
+2026-02-24 19:43:03.601 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 10, in <module>
+    from src.chatbot import ChatbotManager
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 51, in <module>
+    制作
+NameError: name '制作' is not defined
+  Stopping...

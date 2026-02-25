@@ -1,0 +1,109 @@
+2026-02-24 21:22:49,698 - src.utils - INFO - Loading document: /tmp/tmp1pbgf1lq/MiniProject.pdf
+2026-02-24 21:22:50,622 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 21:22:50,623 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 21:22:50,624 - src.utils - INFO - Created 5 chunks.
+2026-02-24 21:22:50,625 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 21:23:18,274 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 21:23:18,274 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 21:23:30,523 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 21:23:34,154 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-24 21:23:34,746 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2026-02-24 21:23:35,124 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 21:23:35,125 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 21:23:35,272 - src.utils - ERROR - Environment variable GOOGLE_API_KEY is not set.
+2026-02-24 21:25:02,417 - src.utils - INFO - Loading document: /tmp/tmprugq197g/MiniProject.pdf
+2026-02-24 21:25:02,583 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 21:25:02,584 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 21:25:02,585 - src.utils - INFO - Created 5 chunks.
+2026-02-24 21:25:02,586 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 21:25:02,591 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 21:25:02,592 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 21:25:10,897 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 21:25:11,810 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 21:25:11,811 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 21:25:11,811 - src.utils - ERROR - Environment variable GOOGLE_API_KEY is not set.
+2026-02-24 21:30:38,469 - src.utils - INFO - Loading document: /tmp/tmpuqu_fkds/MiniProject.pdf
+2026-02-24 21:30:38,750 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 21:30:38,752 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 21:30:38,753 - src.utils - INFO - Created 5 chunks.
+2026-02-24 21:30:38,753 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 21:30:38,777 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 21:30:38,778 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 21:30:47,971 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 21:30:48,811 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 21:30:48,811 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 21:30:48,812 - src.utils - INFO - Initializing ChatbotManager with Gemini...
+2026-02-24 21:31:34,590 - src.utils - INFO - Asking chatbot: Summarize the document?
+2026-02-24 21:31:36,884 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+2026-02-24 21:39:18,458 - src.utils - INFO - Asking chatbot: Summarize the document?
+2026-02-24 21:39:25,496 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+2026-02-24 21:41:49,281 - src.utils - INFO - Loading document: /tmp/tmp8cn40_6j/MiniProject.pdf
+2026-02-24 21:41:49,668 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 21:41:49,669 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 21:41:49,671 - src.utils - INFO - Created 5 chunks.
+2026-02-24 21:41:49,672 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 21:41:49,677 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 21:41:49,678 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 21:42:14,857 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 21:42:15,857 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 21:42:15,859 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 21:42:15,861 - src.utils - INFO - Initializing ChatbotManager with Gemini...
+2026-02-24 21:42:42,036 - src.utils - INFO - Asking chatbot: Summarize the document?
+2026-02-24 21:42:51,087 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. .
+2026-02-24 21:46:56,017 - src.utils - INFO - Loading document: /tmp/tmp2fgc_h2g/MiniProject.pdf
+2026-02-24 21:46:56,212 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 21:46:56,212 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 21:46:56,213 - src.utils - INFO - Created 5 chunks.
+2026-02-24 21:46:56,214 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 21:46:56,218 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 21:46:56,219 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 21:48:00,447 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 6363904a-2a18-424c-bc96-c7bdf11fedb9)')' thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json
+2026-02-24 21:48:00,683 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2026-02-24 21:48:14,510 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 21:48:15,362 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 21:48:15,364 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 21:48:15,365 - src.utils - INFO - Initializing ChatbotManager with Gemini...
+2026-02-24 21:48:55,847 - src.utils - INFO - Asking chatbot: Summarize the document?
+2026-02-24 21:49:01,825 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. .
+2026-02-24 22:01:20,394 - src.utils - INFO - Loading document: /tmp/tmpxwodynxm/MiniProject.pdf
+2026-02-24 22:01:20,588 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 22:01:20,592 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 22:01:20,593 - src.utils - INFO - Created 5 chunks.
+2026-02-24 22:01:20,594 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 22:01:20,598 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 22:01:20,600 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 22:01:49,083 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 22:01:51,257 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 22:01:51,258 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 22:01:51,260 - src.utils - INFO - Initializing ChatbotManager with Gemini...
+2026-02-24 22:02:36,985 - src.utils - INFO - Asking chatbot: Summarize the document?
+2026-02-24 22:02:38,500 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. .
+2026-02-24 22:30:59,391 - src.utils - INFO - Loading document: /tmp/tmpufs3isyg/MiniProject.pdf
+2026-02-24 22:31:00,594 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 22:31:00,594 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 22:31:00,596 - src.utils - INFO - Created 5 chunks.
+2026-02-24 22:31:00,598 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 22:33:08,006 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 22:33:08,007 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 22:33:18,443 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 22:33:21,619 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-24 22:33:22,451 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2026-02-24 22:33:22,819 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 22:33:22,820 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 22:33:22,821 - src.utils - INFO - Initializing ChatbotManager with Gemini...
+2026-02-24 22:34:02,051 - src.utils - INFO - Asking chatbot: summarize the document?
+2026-02-24 22:34:44,754 - src.utils - INFO - Asking chatbot: What is the title of the Project?
+2026-02-24 22:36:51,769 - src.utils - INFO - Loading document: /tmp/tmp9hvgecpv/MiniProject.pdf
+2026-02-24 22:36:52,074 - src.utils - INFO - Loading document: /tmp/tmp9hvgecpv/Deep Learning.pdf
+2026-02-24 22:36:52,080 - src.utils - INFO - Loaded 5 pages from 2 documents.
+2026-02-24 22:36:52,082 - src.utils - INFO - Splitting 5 documents into chunks...
+2026-02-24 22:36:52,085 - src.utils - INFO - Created 5 chunks.
+2026-02-24 22:36:52,087 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 22:36:52,091 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 22:36:52,093 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 22:36:57,102 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 22:36:58,700 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 22:36:58,708 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 22:36:58,710 - src.utils - INFO - Initializing ChatbotManager with Gemini...
+2026-02-24 22:38:16,474 - src.utils - INFO - Asking chatbot: Name on the Learner who completed Deep Learning Course in Udemy?
+2026-02-24 22:38:38,071 - src.utils - INFO - Asking chatbot: Summarize the documents?

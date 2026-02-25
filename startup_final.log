@@ -1,0 +1,587 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.22.191.52:8501
+
+/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.23). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.10, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+/home/hemanth/micromamba/lib/python3.9/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/home/hemanth/micromamba/lib/python3.9/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py:47: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  from google.generativeai.caching import CachedContent  # type: ignore[import]
+2026-02-24 21:22:49,698 - src.utils - INFO - Loading document: /tmp/tmp1pbgf1lq/MiniProject.pdf
+2026-02-24 21:22:50,622 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 21:22:50,623 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 21:22:50,624 - src.utils - INFO - Created 5 chunks.
+2026-02-24 21:22:50,625 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+/home/hemanth/Music/MINI PROJECT - 1/src/embeddings.py:9: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embeddings = HuggingFaceEmbeddings(model_name=model_name)
+2026-02-24 21:23:18,274 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 21:23:18,274 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 21:23:30,523 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 21:23:34,154 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2026-02-24 21:23:34,746 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2026-02-24 21:23:35,124 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 21:23:35,125 - src.utils - INFO - Initializing MemoryManager...
+/home/hemanth/Music/MINI PROJECT - 1/src/memory.py:9: LangChainDeprecationWarning: Please see the migration guide at: https://python.langchain.com/docs/versions/migrating_memory/
+  self.memory = ConversationBufferMemory(
+2026-02-24 21:23:35,272 - src.utils - ERROR - Environment variable GOOGLE_API_KEY is not set.
+2026-02-24 21:23:35.278 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 151, in <module>
+    main()
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 98, in main
+    process_documents(uploaded_files)
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 82, in process_documents
+    st.session_state.chatbot = ChatbotManager(retriever, memory_manager.get_memory())
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 10, in __init__
+    api_key = get_env_variable("GOOGLE_API_KEY")
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/utils.py", line 24, in get_env_variable
+    raise ValueError(f"Missing required environment variable: {var_name}")
+ValueError: Missing required environment variable: GOOGLE_API_KEY
+2026-02-24 21:25:02,417 - src.utils - INFO - Loading document: /tmp/tmprugq197g/MiniProject.pdf
+2026-02-24 21:25:02,583 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 21:25:02,584 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 21:25:02,585 - src.utils - INFO - Created 5 chunks.
+2026-02-24 21:25:02,586 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 21:25:02,591 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 21:25:02,592 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 21:25:10,897 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 21:25:11,810 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 21:25:11,811 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 21:25:11,811 - src.utils - ERROR - Environment variable GOOGLE_API_KEY is not set.
+2026-02-24 21:25:11.814 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 151, in <module>
+    main()
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 98, in main
+    process_documents(uploaded_files)
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 82, in process_documents
+    st.session_state.chatbot = ChatbotManager(retriever, memory_manager.get_memory())
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 10, in __init__
+    api_key = get_env_variable("GOOGLE_API_KEY")
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/utils.py", line 24, in get_env_variable
+    raise ValueError(f"Missing required environment variable: {var_name}")
+ValueError: Missing required environment variable: GOOGLE_API_KEY
+2026-02-24 21:30:38,469 - src.utils - INFO - Loading document: /tmp/tmpuqu_fkds/MiniProject.pdf
+2026-02-24 21:30:38,750 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 21:30:38,752 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 21:30:38,753 - src.utils - INFO - Created 5 chunks.
+2026-02-24 21:30:38,753 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 21:30:38,777 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 21:30:38,778 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 21:30:47,971 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 21:30:48,811 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 21:30:48,811 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 21:30:48,812 - src.utils - INFO - Initializing ChatbotManager with Gemini...
+2026-02-24 21:31:34,590 - src.utils - INFO - Asking chatbot: Summarize the document?
+2026-02-24 21:31:36,884 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+2026-02-24 21:31:39.087 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 151, in <module>
+    main()
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 135, in main
+    answer, source_docs = st.session_state.chatbot.ask(prompt)
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 49, in ask
+    result = self.chain.invoke({"question": query})
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/conversational_retrieval/base.py", line 175, in _call
+    answer = self.combine_docs_chain.run(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 632, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/combine_documents/base.py", line 143, in _call
+    output, extra_return_dict = self.combine_docs(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/combine_documents/stuff.py", line 263, in combine_docs
+    return self.llm_chain.predict(callbacks=callbacks, **inputs), {}
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 325, in predict
+    return self(kwargs, callbacks=callbacks)[self.output_key]
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 127, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 139, in generate
+    return self.llm.generate_prompt(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 1025, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 842, in generate
+    self._generate_with_cache(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 1091, in _generate_with_cache
+    result = self._generate(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 961, in _generate
+    response: GenerateContentResponse = _chat_with_retry(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 196, in _chat_with_retry
+    return _chat_with_retry(**kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+  File "/home/hemanth/micromamba/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/home/hemanth/micromamba/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 194, in _chat_with_retry
+    raise e
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 178, in _chat_with_retry
+    return generation_method(**kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-24 21:39:18,458 - src.utils - INFO - Asking chatbot: Summarize the document?
+2026-02-24 21:39:25,496 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+2026-02-24 21:39:29.109 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 151, in <module>
+    main()
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 135, in main
+    answer, source_docs = st.session_state.chatbot.ask(prompt)
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 49, in ask
+    result = self.chain.invoke({"question": query})
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/conversational_retrieval/base.py", line 175, in _call
+    answer = self.combine_docs_chain.run(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 632, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/combine_documents/base.py", line 143, in _call
+    output, extra_return_dict = self.combine_docs(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/combine_documents/stuff.py", line 263, in combine_docs
+    return self.llm_chain.predict(callbacks=callbacks, **inputs), {}
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 325, in predict
+    return self(kwargs, callbacks=callbacks)[self.output_key]
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 127, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 139, in generate
+    return self.llm.generate_prompt(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 1025, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 842, in generate
+    self._generate_with_cache(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 1091, in _generate_with_cache
+    result = self._generate(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 961, in _generate
+    response: GenerateContentResponse = _chat_with_retry(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 196, in _chat_with_retry
+    return _chat_with_retry(**kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+  File "/home/hemanth/micromamba/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/home/hemanth/micromamba/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 194, in _chat_with_retry
+    raise e
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 178, in _chat_with_retry
+    return generation_method(**kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-24 21:41:49,281 - src.utils - INFO - Loading document: /tmp/tmp8cn40_6j/MiniProject.pdf
+2026-02-24 21:41:49,668 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 21:41:49,669 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 21:41:49,671 - src.utils - INFO - Created 5 chunks.
+2026-02-24 21:41:49,672 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 21:41:49,677 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 21:41:49,678 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 21:42:14,857 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 21:42:15,857 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 21:42:15,859 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 21:42:15,861 - src.utils - INFO - Initializing ChatbotManager with Gemini...
+2026-02-24 21:42:42,036 - src.utils - INFO - Asking chatbot: Summarize the document?
+2026-02-24 21:42:51,087 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. .
+2026-02-24 21:43:04.007 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 151, in <module>
+    main()
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 135, in main
+    answer, source_docs = st.session_state.chatbot.ask(prompt)
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 49, in ask
+    result = self.chain.invoke({"question": query})
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/conversational_retrieval/base.py", line 175, in _call
+    answer = self.combine_docs_chain.run(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 632, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/combine_documents/base.py", line 143, in _call
+    output, extra_return_dict = self.combine_docs(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/combine_documents/stuff.py", line 263, in combine_docs
+    return self.llm_chain.predict(callbacks=callbacks, **inputs), {}
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 325, in predict
+    return self(kwargs, callbacks=callbacks)[self.output_key]
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 127, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 139, in generate
+    return self.llm.generate_prompt(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 1025, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 842, in generate
+    self._generate_with_cache(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 1091, in _generate_with_cache
+    result = self._generate(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 961, in _generate
+    response: GenerateContentResponse = _chat_with_retry(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 196, in _chat_with_retry
+    return _chat_with_retry(**kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+  File "/home/hemanth/micromamba/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/home/hemanth/micromamba/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 194, in _chat_with_retry
+    raise e
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 178, in _chat_with_retry
+    return generation_method(**kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+2026-02-24 21:46:56,017 - src.utils - INFO - Loading document: /tmp/tmp2fgc_h2g/MiniProject.pdf
+2026-02-24 21:46:56,212 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 21:46:56,212 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 21:46:56,213 - src.utils - INFO - Created 5 chunks.
+2026-02-24 21:46:56,214 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 21:46:56,218 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 21:46:56,219 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 6363904a-2a18-424c-bc96-c7bdf11fedb9)')' thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json
+2026-02-24 21:48:00,447 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 6363904a-2a18-424c-bc96-c7bdf11fedb9)')' thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json
+Retrying in 1s [Retry 1/5].
+2026-02-24 21:48:00,683 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2026-02-24 21:48:14,510 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 21:48:15,362 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 21:48:15,364 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 21:48:15,365 - src.utils - INFO - Initializing ChatbotManager with Gemini...
+2026-02-24 21:48:55,847 - src.utils - INFO - Asking chatbot: Summarize the document?
+2026-02-24 21:49:01,825 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. .
+2026-02-24 21:49:04.027 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 151, in <module>
+    main()
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 135, in main
+    answer, source_docs = st.session_state.chatbot.ask(prompt)
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 49, in ask
+    result = self.chain.invoke({"question": query})
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/conversational_retrieval/base.py", line 175, in _call
+    answer = self.combine_docs_chain.run(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 632, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/combine_documents/base.py", line 143, in _call
+    output, extra_return_dict = self.combine_docs(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/combine_documents/stuff.py", line 263, in combine_docs
+    return self.llm_chain.predict(callbacks=callbacks, **inputs), {}
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 325, in predict
+    return self(kwargs, callbacks=callbacks)[self.output_key]
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 127, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 139, in generate
+    return self.llm.generate_prompt(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 1025, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 842, in generate
+    self._generate_with_cache(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 1091, in _generate_with_cache
+    result = self._generate(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 961, in _generate
+    response: GenerateContentResponse = _chat_with_retry(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 196, in _chat_with_retry
+    return _chat_with_retry(**kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+  File "/home/hemanth/micromamba/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/home/hemanth/micromamba/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 194, in _chat_with_retry
+    raise e
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 178, in _chat_with_retry
+    return generation_method(**kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+2026-02-24 22:01:20,394 - src.utils - INFO - Loading document: /tmp/tmpxwodynxm/MiniProject.pdf
+2026-02-24 22:01:20,588 - src.utils - INFO - Loaded 4 pages from 1 documents.
+2026-02-24 22:01:20,592 - src.utils - INFO - Splitting 4 documents into chunks...
+2026-02-24 22:01:20,593 - src.utils - INFO - Created 5 chunks.
+2026-02-24 22:01:20,594 - src.utils - INFO - Initializing EmbeddingManager with model: all-MiniLM-L6-v2
+2026-02-24 22:01:20,598 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-02-24 22:01:20,600 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-24 22:01:49,083 - src.utils - INFO - Creating vector store with 5 chunks...
+2026-02-24 22:01:51,257 - src.utils - INFO - Vector store saved to faiss_index.
+2026-02-24 22:01:51,258 - src.utils - INFO - Initializing MemoryManager...
+2026-02-24 22:01:51,260 - src.utils - INFO - Initializing ChatbotManager with Gemini...
+2026-02-24 22:02:36,985 - src.utils - INFO - Asking chatbot: Summarize the document?
+2026-02-24 22:02:38,500 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. .
+2026-02-24 22:02:40.858 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 151, in <module>
+    main()
+  File "/home/hemanth/Music/MINI PROJECT - 1/app.py", line 135, in main
+    answer, source_docs = st.session_state.chatbot.ask(prompt)
+  File "/home/hemanth/Music/MINI PROJECT - 1/src/chatbot.py", line 49, in ask
+    result = self.chain.invoke({"question": query})
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/conversational_retrieval/base.py", line 175, in _call
+    answer = self.combine_docs_chain.run(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 632, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/combine_documents/base.py", line 143, in _call
+    output, extra_return_dict = self.combine_docs(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/combine_documents/stuff.py", line 263, in combine_docs
+    return self.llm_chain.predict(callbacks=callbacks, **inputs), {}
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 325, in predict
+    return self(kwargs, callbacks=callbacks)[self.output_key]
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 127, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain/chains/llm.py", line 139, in generate
+    return self.llm.generate_prompt(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 1025, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 842, in generate
+    self._generate_with_cache(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 1091, in _generate_with_cache
+    result = self._generate(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 961, in _generate
+    response: GenerateContentResponse = _chat_with_retry(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 196, in _chat_with_retry
+    return _chat_with_retry(**kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+  File "/home/hemanth/micromamba/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/home/hemanth/micromamba/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 194, in _chat_with_retry
+    raise e
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/langchain_google_genai/chat_models.py", line 178, in _chat_with_retry
+    return generation_method(**kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/home/hemanth/micromamba/lib/python3.9/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+  Stopping...

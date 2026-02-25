@@ -1,0 +1,22 @@
+from typing import List
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.schema import Document
+from src.utils import logger
+
+class TextSplitter:
+    """Splits documents into smaller text chunks."""
+    
+    def __init__(self, chunk_size: int = 1000, chunk_overlap: int = 200):
+        self.splitter = RecursiveCharacterTextSplitter(
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
+            length_function=len,
+            add_start_index=True,
+        )
+
+    def split_documents(self, documents: List[Document]) -> List[Document]:
+        """Splits a list of Documents into chunks."""
+        logger.info(f"Splitting {len(documents)} documents into chunks...")
+        chunks = self.splitter.split_documents(documents)
+        logger.info(f"Created {len(chunks)} chunks.")
+        return chunks
